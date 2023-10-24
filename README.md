@@ -1,0 +1,2 @@
+# genericBlog
+A blog.
