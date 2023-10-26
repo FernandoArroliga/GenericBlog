@@ -10,13 +10,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- Header Section -->
     <header>
         <div class="nav container">
-            <a href="#" class="logo">generic <span>Blog</span></a>
-            <a href="#" class="login">CODER</a>
+            <a href="index.html" class="logo" style="color: black;">generic <span>Blog</span></a>
+            <a href="#home" class="login">CODER</a>
         </div>
     </header>
 
+    <!-- Title Section -->
     <section class="home" id="home">
         <div class="home-text container">
             <h2 class="home-title">generic Blog</h2>
@@ -24,6 +27,7 @@
         </div>
     </section>
 
+    <!-- About Section -->
     <section class="about container" id="about">
         <div class="contentBx">
             <h2 class="titleText">Catch up with the trending topics</h2>
@@ -38,10 +42,11 @@
             <a href="https://fernandoarroliga.onrender.com/" class="btn2">Portfolio Website</a>
         </div>
         <div class="imgBx">
-            <img src="images/about02.png" alt="" class="fitBg">
+            <img src="images/about.JFIF" alt="" class="fitBg">
         </div>
     </section>
 
+    <!-- Post Filter Section -->
     <div class="post-filter container">
         <span class="filter-item active-filter" data-filter="all">All</span>
         <span class="filter-item" data-filter="Programming">Programming</span>
@@ -54,7 +59,7 @@
         <div class="post-box Programming">
             <img src="images/commits.png" alt="" class="post-img">
             <h2 class="category">Programming</h2>
-            <a href="#" class="post-title">Commits -- The best way to write them</a>
+            <a href="posts/Programming/post_example01.html" class="post-title" target="_blank">Commits -- The best way to write them</a>
             <span class="post-date">17 Aug 2023</span>
             <p class="post-description">
                 Writing Good Git Commits: A Guide to Effective Version Control.
@@ -156,6 +161,7 @@
 
     </div>
 
+    <!-- Footer Section -->
     <footer>
         <div class="footer-container">
             <div class="sec aboutus">
@@ -174,8 +180,8 @@
             <div class="sec quicklinks">
                 <h2>Quick Links</h2>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
                 </ul>
             </div>
             <div class="sec contactBx">
@@ -194,6 +200,7 @@
         </div>
     </footer>
 
+    <!-- JavaScript Files -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="main.js"></script>
 </body>

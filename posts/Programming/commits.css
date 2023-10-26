@@ -100,7 +100,7 @@ header.shadow .logo{
 .home{
     width: 100%;
     min-height: 440px;
-    background: url("images/background.jpg");
+    background: url("/images/post.jpg");
     display: grid;
     justify-content: center;
     align-items: center;
@@ -113,13 +113,11 @@ header.shadow .logo{
 
 .home-title{
     font-size: 3.5rem;
-    color: #172317;
 }
 
 .home-subtitle{
     font-size: 1rem;
     font-weight: 400;
-    color: blueviolet;
 }
 
 .about{
@@ -496,7 +494,7 @@ footer p{
     }
 }
 
-@media (max-width: 418px){
+@media (max-width: 396px){
     .home-title{
         font-size: 2rem;
     }
@@ -558,6 +556,7 @@ footer p{
         width: 100%;
     }
 }
+
 
 
 @media (max-width: 417px) {
