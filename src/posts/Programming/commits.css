@@ -13,7 +13,7 @@
 /* root values */
 :root {
     --container-color: #1a1e21;
-    --second-color: rgba(77, 228, 255);
+    --second-color: rgba(255, 77, 181);
     --text-color: #172317;
     --bg-color: #fff;
 }
@@ -102,14 +102,15 @@ header.shadow .logo {
 .home {
     width: 100%;
     min-height: 440px;
-    background: url("post03.jpg");
+    background: url("../../images/background.jpg");
     display: grid;
     justify-content: center;
     align-items: center;
 }
 
 .home-text {
-    color: var(--bg-color);
+    /*color: var(--bg-color);*/
+    color: #172317;
     text-align: center;
 }
 
@@ -195,7 +196,7 @@ footer {
     left: 0;
     width: 50px;
     height: 2px;
-    background: rgb(77, 228, 255);
+    background: var(--second-color);
 }
 
 footer p {

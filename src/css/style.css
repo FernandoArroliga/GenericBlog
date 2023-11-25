@@ -14,7 +14,7 @@
 /* root values */
 :root{
     --container-color: #1a1e21;
-    --second-color: rgb(255, 77, 181);
+    --second-color: rgba(255, 77, 181);
     --text-color: #172317;
     --bg-color: #fff;
 }
@@ -103,7 +103,7 @@ header.shadow .logo{
 .home{
     width: 100%;
     min-height: 440px;
-    background: url("images/background.jpg");
+    background: url("../images/background.jpg");
     display: grid;
     justify-content: center;
     align-items: center;
