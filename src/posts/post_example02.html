@@ -1,0 +1,189 @@
+<!-- This is a template for a blog post -->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Meta Information -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Title of the Page -->
+    <title>EDA with Python Functions</title>
+
+    <!-- Author: Fernando Arróliga -->
+    <!-- Day of Creation: March 12, 2023 -->
+
+    <!-- Css Styles -->
+
+</head>
+
+<body>
+
+    <!-- Main Content -->
+    <div class="container my-5">
+
+        <!-- Day of Published -->
+        <p>Published: May 04</p>
+
+        <!-- Title of the Post -->
+        <div class="container-fluid py-3">
+            <h1>EDA - Exploratory Data Analysis: Using Python Functions</h1>
+        </div>
+
+        <!-- Main Image -->
+        <div class="container-fluid">
+            <img src="../images/EDA_python.png" alt="EDA Python" class="img-fluid">
+        </div>
+
+        <!-- Sumary -->
+        <div class="container py-3">
+            <p class="justify-content">
+                In this article, we will be focusing on Python functions used for
+                Exploratory Data Analysis in Python. As we all know, how important
+                EDA is it provides a brief understanding of the data. So, without
+                wasting much time, let’s roll!
+        </div>
+
+        <!-- Some Content Here -->
+        <div class="container py-3">
+            <h2>Exploratory Data Analysis - EDA</h2>
+
+            <p class="justify-content">
+            <ul>
+                <li>EDA is applied to investigate the data and summarize the key insights.</li>
+                <li>
+                    It will give you the basic understanding of your data, it’s distribution, null values and much more.
+                </li>
+                <li>
+                    You can either explore data using graphs or through some python functions.
+                </li>
+                <li>
+                    There will be two type of analysis. Univariate and Bivariate. In the
+                    univariate, you will be analyzing a single attribute. But in
+                    the bivariate, you will be analyzing an attribute with the target attribute.
+                </li>
+                <li>
+                    In the non-graphical approach, you will be using functions such as shape,
+                    summary, describe, isnull, info, datatypes and more.
+                </li>
+                <li>
+                    In the graphical approach, you will be using plots such as scatter,
+                    box, bar, density and correlation plots.
+                </li>
+            </ul>
+            </p>
+        </div>
+
+        <!-- Some Content Here -->
+        <div class="container">
+            <h2 class="justify-content">Load the Data</h2>
+
+            <p>
+                Well, first things first. We will load the titanic dataset into python to perform EDA.
+            </p>
+
+            <div class="container-fluid pt-5" style="background: black; color: #fff;">
+                <pre>
+                    #Load the required libraries
+                    import pandas as pd
+                    import numpy as np
+                    import seaborn as sns
+
+                    #Load the data
+                    df = pd.read_csv('titanic.csv')
+
+                    #View the data
+                    df.head()
+                </pre>
+            </div>
+
+            <img src="../images/python_code.png" alt="python code" class="img-fluid">
+            <p class="justify-content pt-3">Our data is ready to be explored!</p>
+
+        </div>
+
+        <!-- Some Content Here -->
+        <div class="container py-5">
+
+            <h3 class="justify-content">1. Basic information about data - EDA</h3>
+            <p class="justify-content pt-3">
+                The df.info() function will give us the basic information about the 
+                dataset. For any data, it is good to start by knowing its information. 
+                Let’s see how it works with our data.
+            </p>
+            <!-- Python Code -->
+            <div class="container-fluid pt-5" style="background: black; color: #fff;">
+                <pre>
+                    #Basic information
+
+                    df.info()
+
+                    #Describe the data
+
+                    df.describe()
+                </pre>
+            </div>
+            <!-- Image -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-8">
+                        <img src="../images/EDA_info.png" alt="EDA info" class="img-fluid">
+                    </div>
+                    <div class="col-2"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Some Content Here -->
+        <div class="container py-5">
+
+            <h2 class="justify-content pt-3">
+               2. Describe the data - Descriptive statistics.
+            </h2>
+            <p class="justify-content pt-3">
+                Here are some basic statistics information about the data.
+            </p>
+            <!-- Image -->
+            <div class="container pt-2">
+                <img src="../images/describe_data.png" alt="describe data using python" class="img-fluid">
+            </div>
+
+        </div>
+
+        <!-- Conclusion -->
+        <div class="container justify-content py-5">
+
+            <h2 class="pt-2">Conclusion</h2>
+
+            <p>
+                Write some conclusion of your post here!
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container-fluid">
+            <p>
+                Article wrote by: username user.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
